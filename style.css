@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+}
+
+body {
+  max-height: 100%;
+  background: rgb(243,243,246);
+  background: linear-gradient(339deg, rgba(243,243,246,1) 0%, rgba(223,245,208,1) 45%, rgba(226,243,246,1) 77%);
+}
+
+.result {
+  text-align: center;
+}
+
+.mixed {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.card {
+  /* min-height: 100%; */
+  background-size: contain;
+  background-repeat:no-repeat;
+  background: url(img/good-mix.png);
+}
