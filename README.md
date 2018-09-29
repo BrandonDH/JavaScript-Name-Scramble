@@ -1,2 +1,3 @@
-# js-string-mixer
-Mix JS strings - This is a Vanilla JavaScript project with a simple Bootstrap UI.
+# Make MEGA product names
+![picture](https://github.com/BrandonDH/js-string-mixer/blob/master/img/mix-ui.png)
+
