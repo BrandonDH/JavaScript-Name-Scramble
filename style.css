@@ -10,11 +10,15 @@ body {
 .result {
   display: block;
   text-align: center;
-  margin: 0 0 3rem 0;
+  height: 118px;
 }
 
 .mixed {
   font-size: 4rem;
+}
+
+.illu {
+  width: 100%;
 }
 
 @media (max-width: 576px) { 
