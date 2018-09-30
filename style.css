@@ -2,24 +2,27 @@ html {
   height: 100%;
 }
 
-body {
+/* body {
   max-height: 100%;
   background: rgb(243,243,246);
   background: linear-gradient(339deg, rgba(243,243,246,1) 0%, rgba(223,245,208,1) 45%, rgba(226,243,246,1) 77%);
-}
+} */
 
 .result {
+  display: block;
   text-align: center;
+  height: 5rem;
+  margin: 0 0 3rem 0;
 }
 
 .mixed {
-  color: #fff;
-  font-size: 3rem;
+  /* color: #fff; */
+  font-size: 5rem;
 }
 
 .card {
   /* min-height: 100%; */
   background-size: contain;
-  background-repeat:no-repeat;
-  background: url(img/good-mix.png);
+  background-repeat: no-repeat;
+  /* background: url(img/good-mix.png); */
 }
