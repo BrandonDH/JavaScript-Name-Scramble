@@ -1,10 +1,3 @@
-html {
-  height: 100%;
-}
-
-body {
-  max-height: 100%;
-}
 
 .result {
   display: block;
@@ -14,14 +7,7 @@ body {
 
 .output-illu {
   z-index: -1;
-  position: absolute;
   top: 20rem;
-}
-
-@media (max-width: 576px) { 
-  .output-illu {
-    top: 30rem;
-  }
 }
 
 .mixed {
@@ -33,12 +19,11 @@ body {
 }
 
 @media (max-width: 576px) { 
+  .output-illu {
+    top: 30rem;
+  }
+
   .mixed {
     font-size: 2rem;
   }
-}
-
-.card {
-  background-size: contain;
-  background-repeat: no-repeat;
 }
