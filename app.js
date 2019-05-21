@@ -3,7 +3,7 @@ const displayJumble = document.querySelector('.result');
 const form = document.querySelector('form');
 const prodName1 = document.getElementById('prodOne');
 const prodName2 = document.getElementById('prodTwo');
-const jumble = document.createElement('h2');
+const jumble = document.createElement('h1');
 
 form.addEventListener('submit', addName);
 
@@ -12,7 +12,6 @@ function addName(e) {
   newName = prodName1.value + prodName2.value;
   jamble = newName.split('');
 
-  // Grabbed from jumble.appendChild(document.createTextNode(test.value));
   const shuffle = ([...arr]) => {
     let m = arr.length;
     while (m) {
@@ -31,4 +30,3 @@ function addName(e) {
 
   e.preventDefault(); 
 }
-

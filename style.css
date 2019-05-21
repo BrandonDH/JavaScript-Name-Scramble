@@ -1,29 +1,12 @@
-
-.result {
-  display: block;
-  text-align: center;
-  height: 118px;
-}
-
-.output-illu {
-  z-index: -1;
-  top: 20rem;
-}
-
 .mixed {
-  font-size: 4rem;
+  font-size: 5rem;
+  text-transform: capitalize;
+
+}
+body {
+background-color: #d0f5ea!important;
 }
 
-.illu {
-  width: 100%;
-}
-
-@media (max-width: 576px) { 
-  .output-illu {
-    top: 30rem;
-  }
-
-  .mixed {
-    font-size: 2rem;
-  }
+input {
+  border: none!important;
 }
