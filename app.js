@@ -1,32 +1,36 @@
 // Set variables for name jumble
-const displayJumble = document.querySelector('.result');
-const form = document.querySelector('form');
-const prodName1 = document.getElementById('prodOne');
-const prodName2 = document.getElementById('prodTwo');
-const jumble = document.createElement('h1');
+let displayJumble = document.querySelector('.result');
+let form = document.querySelector('form');
+let prodName1 = document.getElementById('prodOne');
+let prodName2 = document.getElementById('prodTwo');
+let jumble = document.createElement('h1');
 
 form.addEventListener('submit', addName);
 
-function addName(e) {
+function addName(event) {
 
   newName = prodName1.value + prodName2.value;
   jamble = newName.split('');
 
-  const shuffle = ([...arr]) => {
-    let m = arr.length;
-    while (m) {
-      const i = Math.floor(Math.random() * m--);
-      [arr[m], arr[i]] = [arr[i], arr[m]];
+  let shuffle = ([...newWord]) => {
+    let totalLetters = newWord.length;
+    while (totalLetters) {
+      let randomNum = Math.floor(Math.random() * totalLetters--);
+      console.log(newWord);
+      console.log(totalLetters);
+      console.log(newWord[totalLetters]);
+      console.log(newWord[randomNum]);
+      [newWord[totalLetters], newWord[randomNum]] = [newWord[randomNum], newWord[totalLetters]];
     }
-    return arr;
+    return newWord;
   };
 
-  test = shuffle(jamble);
+  doTheDeed = shuffle(jamble);
   jumble.setAttribute('title', 'Your new product name jumble!');
   jumble.className = 'mixed';
-  jumble.innerHTML = test.join('');
+  jumble.innerHTML = doTheDeed.join('');
 
   displayJumble.appendChild(jumble);
 
-  e.preventDefault(); 
+  event.preventDefault(); 
 }
