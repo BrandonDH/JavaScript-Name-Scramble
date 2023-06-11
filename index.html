@@ -4,62 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47856723-2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-47856723-2');
-  </script>
-  <title>Gixmdoo</title>
+  <title>New Word</title>
 </head>
-
 <body>
-    <div class="container">
-      <div class="row mt-5">
-        <div class="col"> 
-            <h1>Gixmdoo</h1>
-            <p class="lead">Random word generator</p>
-        </div>
-      </div>
-      <div class="row mt-5 mb-5">
-        <div class="col-md-9">
-          <div class="result">
-          </div>
-        </div>
-        <div class="col-md-3 pl-5 border-left border-dark">
-            <p class="lead">Enter the names of two great things, and press "MIX" to create a new mega product name!</p>
+  <h1>New Word</h1>
 
-          <form id="inputName" label="input two names">
-            <div class="row">
-                <div class="mb-3 input-group input-group-lg">
-                    <input type="text" placeholder="Hats" id="prodOne" class="border-dark form-control rounded-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                </div>
-                <div class="mb-3 input-group input-group-lg">
-                    <input type="text" id="prodTwo" placeholder="VR" id="prodOne" class="form-control border-dark rounded-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                </div>
-                <button type="submit" class="rounded-0 border-dark jumble-text btn btn-dark btn-lg btn-block">Mix Words</button>
-                <button type="submit" class="rounded-0 border-dark jumble-text btn btn-dark btn-lg btn-block" disabled>Add a random space</button>
-            </div>
-          </form>
-        </div>
-      </div>
+  <!--  Display new word; "Name C" -->
+  <div id="result"></div>
+  <p>Enter the names of two great things, and press "MIX" to create a new mega product name!</p>
 
-      <div class="row mt-3">
-          <div class="col text-center text-dark"><a class="text-dark" href="https://www.brandonherford.com">Brandon Herford</a> | <a class="text-dark" href="https://github.com/BrandonDH">GitHub</a></div>
-      </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <!-- My app -->
+  <!-- Form with two input fields; "Name A", "Name B" -->
+  <form id="inputName">
+    <label for="prodOne">Name A</label>
+    <input type="text" placeholder="Hats" id="prodOne" class="border-dark form-control rounded-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    <label for="prodTwo">Name B</label>
+    <input label="Name B" type="text" id="prodTwo" placeholder="VR" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+    <button type="submit">Mix Words</button>
+  </form>
+
+  <!-- Brandon Herford social links -->
+  <a href="https://www.brandonherford.com">Brandon Herford</a>
+  <a href="https://github.com/BrandonDH">GitHub</a>
+
+  <!-- JavaScript -->
   <script src="app.js"></script>
 </body>
 </html>
